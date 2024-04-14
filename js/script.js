@@ -13,3 +13,11 @@ function myFunction() {
 	document.body.style.paddingTop = '0'
   }
 }
+
+function randomViews() {
+  return Math.floor(Math.random() * 101);
+}
+
+document.querySelectorAll(".views").forEach((e)=>{
+    e.innerText = `${randomViews()} Views`
+})

@@ -51,7 +51,11 @@ textarea,input{
 }
 
 textarea:focus,input:focus{
-  border: 2px solid red !important;
+  box-shadow: 0 0 10px 3px red !important;
+}
+
+.carousel-control-next,.carousel-control-prev{
+  width: 7.5%;
 }
 
 .grid figure {
