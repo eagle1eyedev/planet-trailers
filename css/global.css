@@ -41,6 +41,18 @@ background:#fff;
 color:green;
  }
 
+.load_more:hover{
+  cursor: pointer; 
+}
+
+textarea,input{
+  background-color: #2b2b2d !important;
+  resize: none;
+}
+
+textarea:focus,input:focus{
+  border: 2px solid red !important;
+}
 
 .grid figure {
 position: relative;
