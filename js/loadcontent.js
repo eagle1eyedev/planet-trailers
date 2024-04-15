@@ -14,3 +14,12 @@ document.querySelectorAll(".load_more").forEach((e)=>{
         ischecked = !ischecked
     });
 })
+
+const trailer_title = document.getElementById("staticBackdropLabel")
+		const trailer_source = document.getElementById("trailer_vid")
+		document.querySelectorAll(".trailer").forEach((e)=>{
+			e.addEventListener("click",()=>{
+				trailer_title.innerText = e.parentElement.previousElementSibling.previousElementSibling.previousElementSibling.innerText
+				trailer_source.src = e.href
+			})
+		})

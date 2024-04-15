@@ -21,3 +21,15 @@ function randomViews() {
 document.querySelectorAll(".views").forEach((e)=>{
     e.innerText = `${randomViews()} Views`
 })
+
+var stopVideos = function () {
+	var videos = document.querySelectorAll('iframe, video');
+	Array.prototype.forEach.call(videos, function (video) {
+		if (video.tagName.toLowerCase() === 'video') {
+			video.pause();
+		} else {
+			var src = video.src;
+			video.src = src;
+		}
+	});
+};
